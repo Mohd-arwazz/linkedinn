@@ -1,0 +1,400 @@
+/* General styling for the navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f2ee;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Added flex-wrap for better responsiveness */
+}
+
+.right {
+    display: flex;
+}
+
+.img {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.search {
+    border: none;
+    background-color: #edf3f8;
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    padding: 2px;
+    font-size: 15px;
+    transition: 0.3s;
+    /* Smooth transition effect */
+}
+
+.search:focus {
+    outline: none;
+    border: 1px solid #0073b1;
+    /* LinkedIn blue */
+}
+
+/* Navigation Menu Styling */
+.menu {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.menu li img {
+    height: 28px;
+    width: 28px;
+}
+
+.menu li a:hover {
+    color: #0073b1;
+    /* LinkedIn blue */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.badge {
+    position: absolute;
+    top: -1px;
+    right: 25px;
+    padding: 0px 5px;
+    border-radius: 50%;
+    background: rgb(194, 50, 50);
+    color: white;
+    font-size: 8px;
+}
+
+.badge-noti {
+    position: absolute;
+    top: -1px;
+    right: 43px;
+    padding: 0px 4px;
+    border-radius: 50%;
+    background: rgb(194, 50, 50);
+    color: white;
+    font-size: 10px;
+}
+
+.menu li a:hover, 
+.last a:hover {
+    background-color: #f0f0f0; /* Light grey */
+    border-radius: 5px; /* To give a slight square effect */
+    cursor: pointer;
+    padding: 5px; /* Adjust padding for hover background */
+    transition: background-color 0.3s ease;
+}
+
+/* Last section of navigation */
+.last {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.last img {
+    height: 35px;
+    width: 35px;
+}
+
+.last a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    padding: 5px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    display: block;
+    box-sizing: border-box;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.box-2,
+.box-3,
+.box-4 {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.boxx{
+    background-color: #fff;
+    width: 250px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.box-1 {
+    background-color: rgb(213, 0, 0);
+    height: 70px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.boxx img {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+.boxx button {
+    width: 150px;
+    color: gray;
+    border: 1px dashed;
+}
+
+.box-4 ul {
+    list-style: none;
+}
+
+.box-4 li {
+    display: flex;
+    align-items: center;
+}
+
+.box-4 img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+/* Main content styling */
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.post-1 {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.text {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.text img {
+    width: 70px;
+    height: 70px;
+}
+
+.text input {
+    margin-left: 15px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 5px;
+    height: 50px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+
+.text input:focus {
+    outline: none;
+    border-color: #0073b1;
+}
+
+.post-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.post-2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.post-2 span {
+    margin-left: -80px;
+    color: gray;
+}
+
+/* Horizontal line with arrow */
+.hr-arrow {
+    position: relative;
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+}
+
+.hr-arrow::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+}
+
+/* Post 3 styling */
+.post-3 {
+    width: 600px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.post-2 img:hover, 
+.like img:hover {
+    background-color: #f0f0f0; /* Light grey */
+    border-radius: 50%; /* Circle shape */
+    cursor: pointer;
+    /* padding: 5px; Adjust padding to keep the icon centered */
+    transition: background-color 0.3s ease;
+}
+.post-3 img:hover, 
+.like img:hover {
+    background-color: #f0f0f0; /* Light grey */
+    border-radius: 50%; /* Circle shape */
+    cursor: pointer;
+}
+
+.like {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+}
+
+.like span {
+    margin-left: -50px;
+}
+
+/* Right Sidebar */
+.rightbar {
+    display: block;
+    box-sizing: border-box;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.heading {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.h6 {
+    margin: 2px;
+    color: black;
+    font-size: 15px;
+}
+
+.pera {
+    color: gray;
+    margin: 2px;
+    font-size: 13px;
+}
+
+.heading-1 {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-1 {
+        width: 100%;
+    }
+
+    .sidebar,
+    .box-1,
+    .boxx,
+    .box-2,
+    .box-3,
+    .box-4 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .like span {
+        margin-left: -30px;
+    }
+}
